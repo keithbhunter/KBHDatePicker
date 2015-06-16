@@ -8,18 +8,26 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+class ViewController: UIViewController, KBHDatePickerDelegate {
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let datePicker = KBHDatePicker(frame: CGRectMake(0, 44, self.view.bounds.size.width, 70))
+        datePicker.datePickerDelegate = self
+        self.view.addSubview(datePicker)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    // MARK: - KBHDatePickerDelegate
+    
+    func datePicker(datePicker: KBHDatePicker, dateChangedFrom oldDate: NSDate, toDate newDate: NSDate) {
+        print("\(NSStringFromClass(self.classForCoder)) - \(__FUNCTION__) - Old date: \(oldDate) - New date: \(newDate)")
     }
-
+    
+    func datePicker(datePicker: KBHDatePicker, monthChangedFrom oldMonth: String, toMonth newMonth: String) {
+        print("\(NSStringFromClass(self.classForCoder)) - \(__FUNCTION__) - Old month: \(oldMonth) - New date: \(newMonth)")
+    }
 
 }
 
