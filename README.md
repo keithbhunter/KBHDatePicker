@@ -1,6 +1,8 @@
 # KBHDatePicker
 Infinite scrolling date picker similar to iOS' Calendar app.
 
+![Alt text](https://github.com/keithbhunter/KBHDatePicker/blob/master/Images/DatePicker.png "KBHDatePicker")
+
 ## Usage
 
 ```
