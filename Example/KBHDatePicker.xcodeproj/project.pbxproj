@@ -427,6 +427,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KBHDatePicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.keithbhunter.KBHDatePicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -438,6 +439,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KBHDatePicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.keithbhunter.KBHDatePicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -511,6 +513,7 @@
 				E799BDA71B2F1117001B7AA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E799BDA81B2F1117001B7AA5 /* Build configuration list for PBXNativeTarget "KBHDatePickerTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +522,7 @@
 				E799BDAA1B2F1117001B7AA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E799BDAB1B2F1117001B7AA5 /* Build configuration list for PBXNativeTarget "KBHDatePickerUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +531,7 @@
 				E799BDAD1B2F1117001B7AA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
